@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 :root{
-    --bg-color:#161616;
+    --bg-color:#311130;
     --btn-color:#DD0000;
     --font-color:#fff;
 }
@@ -39,7 +39,7 @@ body{
     width: 50%;
 }
 .banner-tittle{
-    font-size:6vw;
+    font-size: 5vw;
 }
 .top-banner .banner-left button{
     background-color: var(--btn-color);
@@ -66,7 +66,7 @@ body{
 /* top banner animation effect */
 
 .banner-tittle-two{
-    font-size: 6vw;
+    font-size: 5vw;
     width: 0ch;
     white-space: nowrap;
     overflow: hidden;
@@ -156,7 +156,17 @@ body{
     display: flex;
     column-gap: 10px;
 }
-
+.container .view-all{
+    display: none;
+}
+.view-all button{
+    background-color: var(--btn-color);
+    color: var(--font-color);
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
 /* footer style */
 
 footer{
@@ -185,11 +195,21 @@ footer{
     column-gap: 40px;
     justify-content: center;
 }
+/* social media icon */
+.social{
+    color: rgb(199, 181, 181);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #47144e;;
+    margin-right: 30px;
+}
+
 /* ----------------
         Responsive 
 -------------------*/
 /* Tablet view */
-@media only  screen and (min-width:769px) and (max-width:1023px) {
+@media only  screen and (min-width:768px) and (max-width:1023px) {
     .banner-tittle,.banner-tittle-two{
         font-size: 4vw;
     }
@@ -206,6 +226,13 @@ footer{
     .aside-section a{
         border: 1px solid gainsboro;
     }
+    .container .view-all{
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        
+    }
     .blogs{
         grid-template-columns: repeat(2,1fr);
     }
@@ -214,6 +241,9 @@ footer{
     }
     .blog:nth-child(9){
         display: none;
+    }
+    footer {
+        height: 40vw;
     }
     .footer-bottom .footer-info{
         flex-wrap: wrap;
@@ -280,6 +310,9 @@ footer{
     .blog .blog-img{
         width:80vw;
     }
+    footer {
+        height: 70vw;
+    }
     .footer-bottom .footer-info{
         flex-direction: column;
         row-gap: 15px;
@@ -301,7 +334,6 @@ footer{
         height:  275px;
         width: 250px;
         margin-top: 7.5vw;
-    
     }
     .mb-view{
         display: block;
@@ -319,7 +351,7 @@ footer{
         width: 100%;
         overflow: hidden;
         margin-right: 10%;
-        margin-top: 80px;
+        margin-top: 88px;
     }
     .banner-tittle,.banner-tittle-two{
         font-size: 4vw;
@@ -340,6 +372,9 @@ footer{
     }
     .blog .blog-img{
         width:80vw;
+    }
+    footer {
+        height: 110vw;
     }
     .footer-bottom .footer-info{
         flex-direction: column;

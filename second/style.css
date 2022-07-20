@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 :root{
-    --bg-color:#161616;
+    --bg-color:#311130;
     --btn-color:#DD0000;
     --font-color:#fff;
 }
@@ -180,11 +180,23 @@ footer{
     column-gap: 40px;
     justify-content: center;
 }
+/* social media icon */
+.social{
+    color: rgb(199, 181, 181);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #47144e;
+    margin-right: 30px;
+}
 /* ----------------
         Responsive 
 -------------------*/
 /* Tablet view */
-@media only  screen and (min-width:769px) and (max-width:1023px) {
+@media only  screen and (min-width:768px) and (max-width:1023px) {
+    /* .container{
+        width: 94%;
+    } */
     .banner-tittle,.banner-tittle-two{
         font-size: 4vw;
     }
@@ -204,11 +216,20 @@ footer{
     .blogs{
         grid-template-columns: repeat(2,1fr);
     }
-    .blog .blog-img{
+    .blog{
         width:38vw;
     }
+    .blog .blog-img{
+        width: 38vw;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
     .blog:nth-child(9){
         display: none;
+    }
+    footer {
+        height: 40vw;
     }
     .footer-bottom .footer-info{
         flex-wrap: wrap;
@@ -272,8 +293,20 @@ footer{
     .blogs{
         grid-template-columns: repeat(1,1fr);
     }
+    .blog{
+        width: 70vw;
+        margin-left:30px ;
+    }
     .blog .blog-img{
         width:80vw;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    .blog .blog-img img{
+        margin-bottom: 20px;
+    }
+    footer {
+        height: 70vw;
     }
     .footer-bottom .footer-info{
         flex-direction: column;
@@ -333,8 +366,20 @@ footer{
     .blogs{
         grid-template-columns: repeat(1,1fr);
     }
+    .blog{
+        width: 70vw;
+        margin-left:30px ;
+    }
     .blog .blog-img{
         width:80vw;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    .blog .blog-img img{
+        margin-bottom: 20px;
+    }
+    footer {
+        height: 110vw;
     }
     .footer-bottom .footer-info{
         flex-direction: column;
