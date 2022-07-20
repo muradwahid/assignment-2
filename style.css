@@ -40,12 +40,35 @@ body{
     margin-top: 20px;
     border: none;
     border-radius: 5px;
+    transition: all 0.6s;
+}
+.top-banner .banner-left button:hover{
+    transform: scale(1.2);
 }
 .fa-solid{
     margin-left: 5px;
 }
 .top-banner .banner-right img{
     height: 550px;
+}
+/* top banner animation effect */
+
+.banner-tittle-two{
+    font-size: 70px;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: text 4s steps(11) infinite;
+    border-right: 4px solid #fff;
+
+}
+@keyframes text {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 11ch;
+    }
 }
 
 /* aside and blog section style */
@@ -80,7 +103,10 @@ body{
     background-color: var(--btn-color);
     color: var(--font-color);
 }
-
+.aside-section a:nth-child(3):hover{
+    background-color: var(--font-color);
+    color: var(--btn-color);
+}
 /* blog style section */
 
 .blogs{
